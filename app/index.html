@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>TodoIt</title>
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body ng-controller="FrameCtrl">
+      <div ng-controller="DashboardCtrl">
+        <h1>{{ today }}</h1>
+        <h2>Welcome back, {{ name }}</h2>
+        <input ng-model="entryInput" type="text" placeholder="New Entry" />
+      </div>
+      <!-- Library files -->
+      <script src="lib/angular.js"></script>
+      <script src="lib/angular-routes.js"></script>
+      <!-- App files -->
+      <script src="js/filters.js"></script>
+      <script src="js/controllers.js"></script>
+      <script src="js/directives.js"></script>
+      <script src="js/services.js"></script>
+      <script src="js/app.js"></script>
+    </body>
+</html>
